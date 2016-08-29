@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/three"
+        layout="@layout/help_moroccan_childrean" />
+
+    <include
+        android:id="@+id/one"
+        layout="@layout/monitoring_donation" />
+
+    <include
+        android:id="@+id/two"
+        layout="@layout/help_moroccan_children" />
+
+    <include
+        android:id="@+id/four"
+        layout="@layout/campines" />
+
+
+</LinearLayout>

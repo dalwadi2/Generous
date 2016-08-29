@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MyAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+         <ImageView
+             android:layout_width="130dp"
+             android:layout_height="130dp"
+             android:layout_gravity="center"
+             android:padding="10dp"
+             android:src="@drawable/upload" />
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"
+             android:orientation="horizontal">
+
+             <TextView
+                 style="@style/MyAppTheme"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:textColor="@color/dark_gray"
+                 android:text="First Name"
+                 android:textSize="14sp" />
+
+             <EditText
+                 android:id="@+id/et_fname_profileUserSide"
+                 style="@style/MyAppTheme"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                 android:background="@drawable/ractangle_shap"
+                 android:hint="XYZ"
+                 android:padding="8dp"
+                 android:textColor="@color/dark_gray"
+                 android:textColorHint="@color/dark_gray"
+                 android:textSize="14sp" />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"
+             android:orientation="horizontal">
+
+             <TextView
+                 style="@style/MyAppTheme"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:text="Last Name"
+                 android:textColor="@color/dark_gray"
+                 android:textSize="14sp" />
+
+             <EditText
+                 android:id="@+id/et_lname_profileUserSide"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                 android:background="@drawable/ractangle_shap"
+                 android:hint="XYZ"
+                 android:padding="8dp"
+                 android:textColor="@color/dark_gray"
+                 android:textColorHint="@color/dark_gray"
+                 android:textSize="14sp" />
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_address_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="XYZ"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="xyz@gmail.com"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Password"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_password_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/MyAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="Notification"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:text="Reminder the campaigns:"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:padding="8dp">
+
+                <Spinner
+                    android:id="@+id/sp_participated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:text="Frequently to reminder the campagins"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:padding="8dp">
+
+                <Spinner
+                    android:id="@+id/sp_days_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/MyAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="Sound"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:text="Sound effect:"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/toggle_sound_profileUserSide"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                app:kswTintColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <Button
+            style="@style/MyAppTheme"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonshape_blue"
+            android:text="accept and save"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

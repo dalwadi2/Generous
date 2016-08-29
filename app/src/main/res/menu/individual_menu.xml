@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/like_individual"
+        android:icon="@drawable/ic_action_heart"
+        android:title="like"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_update_camp_one"
+        android:title="Sold BGenerous 670\u0024" />
+
+    <item
+        android:id="@+id/action_settings_individual"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/action_notification_individual"
+        android:title="Notification" />
+
+
+    <item
+        android:id="@+id/action_map_individual"
+        android:title="Search Location" />
+
+    <item
+        android:id="@+id/action_logout_individual"
+        android:title="Logout" />
+</menu>

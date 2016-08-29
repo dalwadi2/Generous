@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/ic_action_heart"
+        android:title="like"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_update_camp"
+        android:title="Update Campaign Position " />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/action_notification"
+        android:title="Notification" />
+
+
+    <item
+        android:id="@+id/action_map"
+        android:title="Search Location" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout" />
+</menu>

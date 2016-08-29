@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ractangle_shap"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/MyAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Method of payment"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/MyAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/visa"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/MyAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/paypal"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ractangle_shap"
+        android:padding="8dp"
+        android:text="First Name"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ractangle_shap"
+        android:drawableRight="@drawable/paypal"
+        android:padding="8dp"
+        android:text="Name"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ractangle_shap"
+        android:drawableRight="@drawable/paypal"
+        android:padding="8dp"
+        android:text="Email"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ractangle_shap"
+        android:padding="8dp"
+        android:text="Password"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="12sp" />
+
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ractangle_shap"
+        android:drawableLeft="@drawable/visa"
+        android:padding="8dp"
+        android:text="@string/visa"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+
+    <TextView
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="bGenerous protecs you confidential data"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/bb" />
+
+        <TextView
+            style="@style/MyAppTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:text="I have read and accept the condition BGenerous regarding the collection and management of donation"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/MyAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/small_shap"
+        android:text="Give Donation"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+</LinearLayout>

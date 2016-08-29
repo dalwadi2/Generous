@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ractangle_shap"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_donation"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Donation(money)"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_otherDonation"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Others donations"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ractangle_shap"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/ractangle_shap"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_usd_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radio11"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="10\u0024"
+                android:textColor="@color/dark_gray"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/radio22"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="20\u0024"
+                android:textColor="@color/dark_gray"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/radio33"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="50\u0024"
+                android:textColor="@color/dark_gray"
+                android:textSize="8sp" />
+
+            <!-- <RadioButton
+                 android:id="@+id/radio44"
+                 style="@style/MyAppTheme"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:lines="1"
+                 android:text="100\u0024"
+                 android:textColor="@color/dark_gray"
+                 android:textSize="7sp" />-->
+
+            <RadioButton
+                android:id="@+id/rb_other"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="Other"
+                android:textColor="@color/dark_gray"
+                android:textSize="7sp" />
+
+            <EditText
+                android:id="@+id/et_other_other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="..."
+                android:lines="1"
+                android:textSize="8sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ractangle_shap"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio111"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Particular donation"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio222"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Donation in the name of an organization"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_organization"
+            style="@style/MyAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ractangle_shap"
+            android:hint="Organization"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:hint="Phone"
+                android:lines="1"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:hint="postal Code"
+                android:lines="1"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/bb" />
+
+            <EditText
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@drawable/ractangle_shap"
+                android:hint="Address"
+                android:lines="1"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_person_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <Spinner
+                    android:id="@+id/sp_type_dona1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/dark_gray" />
+
+            </LinearLayout>
+
+
+            <EditText
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:hint="number of donation"
+                android:lines="1"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_estimated_donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tv_estimated_value_donation"
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.8"
+                android:background="@drawable/ractangle_shap"
+                android:hint="Estimated Values of donations"
+                android:lines="1"
+                android:padding="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/ractangle_shap"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_usd_user1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ractangle_shap"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Spinner
+                android:id="@+id/sp_method_recuputation1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/bb" />
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:text="@string/abc"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ractangle_shap"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. You only pay when the campaign is successful;"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. You can Follow any times your donations minutley with BGenerous maps;"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. You can giving marks and comments to the Foundations (ranking best foundations)."
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.The foundation commits to use donation only in this campaign."
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.The BGenerous auditors visit the campaign realization and give marks."
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_give_donation_campaign_people"
+            style="@style/MyAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape_blue"
+            android:text="Give Donation"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

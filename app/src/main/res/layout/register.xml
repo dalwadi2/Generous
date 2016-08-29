@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_fname_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ractangle_border"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="First Name"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_name_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ractangle_border"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ractangle_border"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_password_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ractangle_border"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ractangle_shap"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/sp_country_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownVerticalOffset="20dp"
+                    android:paddingLeft="8dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_city_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ractangle_border"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="City"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <!--<RadioGroup
+                    android:id="@+id/rg_group_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_person_register"
+                        style="@style/MyAppTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Person"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_foundation_register"
+                        style="@style/MyAppTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Foundation"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+                </RadioGroup>-->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/individual_icon" />
+
+                <!--<FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_grey_individual"
+                        style="@style/MyAppTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#CCC"
+                        android:padding="10dp"
+                        android:lines="2"
+                        android:gravity="center"
+                        android:text="Individual"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_green_individual"
+                        style="@style/MyAppTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="Individual"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </FrameLayout>-->
+
+                <ToggleButton
+                    android:id="@+id/toggle_individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/check"
+                    android:padding="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textOff="individual"
+                    android:textOn="individual"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/charity_foundation_icon" />
+
+                <!-- <FrameLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center">
+
+                     <TextView
+                         android:id="@+id/tv_green_foundation"
+                         style="@style/MyAppTheme"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@color/colorPrimary"
+                         android:padding="10dp"
+                         android:text="charity foundation"
+                         android:textColor="@android:color/white"
+                         android:textSize="14sp"
+                         android:visibility="gone" />
+
+                     <TextView
+                         android:id="@+id/tv_grey_foundation"
+                         style="@style/MyAppTheme"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#CCC"
+                         android:padding="10dp"
+                         android:lines="2"
+                         android:gravity="center"
+                         android:text="charity foundation"
+                         android:textColor="@android:color/white"
+                         android:textSize="14sp" />
+
+                 </FrameLayout>-->
+
+                <ToggleButton
+                    android:id="@+id/toggle_charity_foundation"
+                    style="@style/MyAppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/check"
+                    android:padding="15dp"
+                    android:text="charity foundation"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textOff="charity foundation"
+                    android:textOn="charity foundation"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="By clicking on the register button, you Agree to the Terms of Uses BGenerous."
+                android:textColor="@color/dark_gray"
+                android:textSize="10sp" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:rv_alpha="120"
+                app:rv_framerate="15"
+                app:rv_type="rectangle"
+                app:rv_zoom="true">
+
+                <Button
+                    android:id="@+id/btn_registerClick_register"
+                    style="@style/MyAppTheme"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/buttonshape_blue"
+                    android:text="Register"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:id="@+id/tv_allReadyAccount_register"
+                style="@style/MyAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="I HAVE ALREADY AN ACCOUNT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

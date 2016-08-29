@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Generous</string>
+
+    <string name="value">To collect donations with methods of recuperation &quot;at home&quot;, please confirm with the donor before 
+        moving click on &quot;details&quot; to view his contact </string>
+    
+    <string name="give_donation">
+        1. You only pay when the campaign is successful;\n
+        2. You can Follow any times your donations
+        minutley with BGenerous maps;\n
+        3. You can giving marks and comments to the
+        Foundations (ranking best foundations).\n
+        4.The foundation commits to use donation only in
+        this campaign.\n
+        5.The BGenerous auditors visit the
+        campaign realization and give marks.
+    </string>
+
+
+     <string name="visa">
+        You will only be charged a \u00241 non-\n
+        refundable fee at checkout, and the full amount\n
+        will only be charged when the campaign start.\n
+    </string>
+
+     <string name="abc">
+       I have read and accept the conditionB Generous reading the collection and management of donations and I will
+         contribute the donations which I have committed.
+    </string>
+
+
+    <string name="next">Get Started</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Get Started</string>
+
+    <string name="slide_1_desc">Innovation in the field of charity and humanitarian action.</string>
+
+    <string name="slide_2_desc">Making charity is to feel happiness. Choose the Campaign to want support.</string>
+
+    <string name="slide_3_desc">Follow your donations and make sure that everything was done as desired.</string>
+
+    <string name="slide_4_desc">Get involved more with Giving marks to projects and build a reference for all.</string>
+
+    <string name="xyz">Do you accept to give a few of your time to assiste and evaluate the campaign named diner for refugie</string>
+    <string name="paypal">You will be charged the full amount at checkout. If the campaign is unsuccessful, the funds will go back in your BGenerous balance where you can give them on others campaigns</string>
+</resources>
